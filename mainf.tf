@@ -40,7 +40,7 @@ data "terraform_remote_state" "vnet" {
 }
 
 provider "aws" {
-  
+  region = "us-east-1"
   default_tags {
     tags = {
       owner      = "paulovitor"
